@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE cinema SYSTEM "cineplex.dtd">
+<?xml-stylesheet type="text/xsl" href="cineplex.xsl"?>
+
+<cinema>
+
+	<movie>
+		<movie_title certificate="15">21 Jump Street</movie_title>
+		<release_date>March 16 2012</release_date>
+		<runtime>110</runtime>
+		<poster_img>21_jump_street</poster_img>
+		<trailer>5k0mo_oJfn4</trailer>
+		<storyline>A pair of underachieving cops are sent back to a local high school to blend in and bring down a synthetic drug ring.</storyline>
+		<synopsis>In the action-comedy 21 Jump Street, Schmidt (Jonah Hill) and Jenko (Channing Tatum) are more than ready to leave their adolescent problems behind. Joining the police force and the secret Jump Street unit, they use their youthful appearances to go undercover in a local high school. As they trade in their guns and badges for backpacks, Schmidt and Jenko risk their lives to investigate a violent and dangerous drug ring. But they find that high school is nothing like they left it just a few years earlier - and neither expects that they will have to confront the terror and anxiety of being a teenager again and all the issues they thought they had left behind.</synopsis>
+		<director>Phil Lord</director>
+		<director>Christopher Miller</director>
+		<writers>Jonah Hill</writers>
+		<writers>Michael Bacall</writers>
+		<genre>Action</genre>
+		<genre>Comedy</genre>
+		<cast>Jonah Hill</cast>
+		<cast>Channing Tatum</cast>
+		<cast>Brie Larson</cast>
+		<rating>4.5</rating>
+		<official_website>http://www.21jumpstreet-movie.com/</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>14:50</time>
+				<time>17:30</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>12:15</time>
+				<time>14:50</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>12:15</time>
+				<time>14:50</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>12:15</time>
+				<time>14:50</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>15:40</time>
+				<time>17:25</time>
+				<time>19:30</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>12:15</time>
+				<time>14:50</time>
+				<time>17:00</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>13:10</time>
+				<time>15:40</time>
+				<time>17:25</time>
+				<time>19:30</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	
+	<movie>
+		<movie_title certificate="12a">John Carter</movie_title>
+		<release_date>March 9 2012</release_date>
+		<runtime>132</runtime>
+		<poster_img>john_carter</poster_img>
+		<trailer>6Rf55GTEZ_E</trailer>
+		<storyline>Transplanted to Mars, a Civil War vet discovers a lush planet inhabited by 12-foot tall barbarians. Finding himself a prisoner of these creatures, he escapes, only to encounter a princess who is in desperate need of a savior.</storyline>
+		<synopsis>From Academy Award(R)-winning filmmaker Andrew Stanton comes John Carter sweeping action-adventure set on the mysterious and exotic planet of Barsoom (Mars). John Carter is based on a classic novel by Edgar Rice Burroughs, whose highly imaginative adventures served as inspiration for many filmmakers, both past and present.
+The film tells the story of war-weary, former military captain John Carter (Taylor Kitsch), who is inexplicably transported to Mars where he becomes reluctantly embroiled in a conflict of epic proportions amongst the inhabitants of the planet, including Tars Tarkas (Willem Dafoe) and the captivating Princess Dejah Thoris (Lynn Collins). In a world on the brink of collapse, Carter rediscovers his humanity when he realizes that the survival of Barsoom and its people rests in his hands.</synopsis>
+		<director>Andrew Stanton</director>
+		<writers>Andrew Stanton</writers>
+		<writers>Mark Andrews</writers>
+		<writers>Michael Chabon</writers>
+		<writers>Edgar Rice Burroughs</writers>
+		<genre>Action</genre>
+		<genre>Adventure</genre>
+		<genre>Fantasy</genre>
+		<cast>Taylor Kitsch</cast>
+		<cast>Lynn Collins</cast>
+		<cast>Willem Dafoe</cast>
+		<rating>3.5</rating>
+		<official_website>http://disney.go.com/johncarter/?cmp=wdsmp_jcm_url_johncarterarrives</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>16:30</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>16:30</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>16:30</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>16:30</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>15:20</time>
+				<time>16:45</time>
+				<time>19:40</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>11:30</time>
+				<time>16:30</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>13:45</time>
+				<time>19:45</time>
+				<time>21:30</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="15">Safe House</movie_title>
+		<release_date>FEB 24 2012</release_date>
+		<runtime>115</runtime>
+		<poster_img>safe_house</poster_img>
+		<trailer>oWzTOoOpFa8</trailer>
+		<storyline>A young CIA agent is tasked with looking after a fugitive in a safe house. But when the safe house is attacked, he finds himself on the run with his charge.</storyline>
+		<synopsis>Oscar winner Denzel Washington and Ryan Reynolds star in the action-thriller Safe House. Washington plays the most dangerous renegade from the CIA, who comes back onto the grid after a decade on the run. When the South African safe house he's remanded to is attacked by mercenaries, a rookie operative (Reynolds) escapes with him. Now, the unlikely allies must stay alive long enough to uncover who wants them dead. For the past year, Matt Weston has been frustrated by his inactive, backwater post in Cape Town.
+A housekeeper who aspires to be a full-fledged agent, the loyal company man has been waiting for an opportunity to prove himself. When the first and only occupant he's had proves to be the most dangerous man he's ever met, Weston readies for duty.
+Tobin Frost has eluded capture for almost a decade. One of the best ops men that the CIA's known, the ex-intelligence officer has given up assets and sold military intel to anyone with cash since he turned. From trading secrets to North Korea to aiding splinter cells, the damage he's done to the U.S. is immeasurable. And he's now back on the reservation with a secret.
+As soon as Frost is brought in for debriefing, mercenaries come and tear apart Weston's safe house. Barely escaping, the unlikely partners must discover if their attackers have been sent by terrorists or someone on the inside who will kill anyone standing in the way. Now it's up to Weston to figure out who he can trust before they're both eliminated from the game.</synopsis>
+		<director>Daniel Espinosa</director>
+		<writers>David Guggenheim</writers>
+		<genre>Action</genre>
+		<genre>Crime</genre>
+		<genre>Mystery</genre>
+		<cast>Denzel Washington</cast>
+		<cast>Ryan Reynolds</cast>
+		<cast>Brendan Gleeson</cast>
+		<rating>3.5</rating>
+		<official_website>http://www.nooneissafe.com/</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>16:20</time>
+				<time>21:30</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>16:20</time>
+				<time>21:30</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>16:20</time>
+				<time>21:30</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>16:20</time>
+				<time>21:30</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>13:40</time>
+				<time>16:20</time>
+				<time>21:30</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>11:10</time>
+				<time>16:20</time>
+				<time>21:30</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>11:10</time>
+				<time>16:20</time>
+				<time>21:30</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="u">The Muppets</movie_title>
+		<release_date>FEB 10 2012</release_date>
+		<runtime>110</runtime>
+		<poster_img>the_muppets</poster_img>
+		<trailer>C4YhbpuGdwQ</trailer>
+		<storyline>With the help of three fans, The Muppets must reunite to save their old theater from a greedy oil tycoon.</storyline>
+		<synopsis>On vacation in Los Angeles, Walter, the world's biggest Muppet fan, and his friends Gary (Jason Segel) and Mary (Amy Adams) from Smalltown, USA, discover the nefarious plan of oilman Tex Richman (Chris Cooper) to raze the Muppet Theater and drill for the oil recently discovered beneath the Muppets former stomping grounds.
+To stage The Greatest Muppet Telethon Ever and raise the $10 million needed to save the theater, Walter, Mary and Gary help Kermit reunite the Muppets, who have all gone their separate ways: Fozzie now performs with a Reno casino tribute band called the Moppets, Miss Piggy is a plus-size fashion editor at Vogue Paris, Animal is in a Santa Barbara clinic for anger management, and Gonzo is a high-powered plumbing magnate.</synopsis>
+		<director>James Bobin</director>
+		<writers>Jason Segel</writers>
+		<writers>Nicholas Stoller</writers>
+		<genre>Comedy</genre>
+		<cast>Jason Segel</cast>
+		<cast>Amy Adams</cast>
+		<cast>Chris Cooper</cast>
+		<rating>3.5</rating>
+		<official_website>http://www.disney.co.uk/muppets/</official_website>
+		<showtimes>
+			<date>
+				<day>fri</day>
+				<time>17:00</time>
+				<time>19:30</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>11:15</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>11:15</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="12a">The Woman In Black</movie_title>
+		<release_date>FEB 10 2012</release_date>
+		<runtime>95</runtime>
+		<poster_img>the_woman_in_black</poster_img>
+		<trailer>dPYMUnJGURI</trailer>
+		<storyline>A young lawyer travels to a remote village where he discovers the vengeful ghost of a scorned woman is terrorizing the locals.</storyline>
+		<synopsis>Arthur Kipps, a widowed lawyer whose grief has put his career in jeopardy, is sent to a remote village to sort out the affairs of a recently deceased eccentric. But upon his arrival, it soon becomes clear that everyone in the town is keeping a deadly secret. Although the townspeople try to keep Kipps from learning their tragic history, he soon discovers that the house belonging to his client is haunted by the ghost of a woman who is determined to find someone and something she lost...and no one, not even the children, are safe from her vengeance.</synopsis>
+		<director>James Watkins</director>
+		<writers>Susan Hill</writers>
+		<writers>Jane Goldman</writers>
+		<genre>Drama</genre>
+		<genre>Horror</genre>
+		<genre>Thriller</genre>
+		<cast>Daniel Radcliffe</cast>
+		<cast>Janet McTeer</cast>
+		<cast>Ciaran Hinds</cast>
+		<rating>3.5</rating>
+		<official_website>http://www.thewomaninblack.com/</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>13:45</time>
+				<time>16:30</time>
+				<time>18:45</time>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>14:25</time>
+				<time>17:40</time>
+				<time>19:25</time>
+				<time>22:00</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>13:45</time>
+				<time>17:30</time>
+				<time>19:45</time>
+				<time>22:10</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>14:25</time>
+				<time>17:30</time>
+				<time>19:45</time>
+				<time>22:00</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>13:45</time>
+				<time>16:30</time>
+				<time>18:45</time>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>14:25</time>
+				<time>17:10</time>
+				<time>19:25</time>
+				<time>21:30</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>14:40</time>
+				<time>17:30</time>
+				<time>19:45</time>
+				<time>21:10</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="pg">We Bought A Zoo</movie_title>
+		<release_date>MAR 16 2012</release_date>
+		<runtime>124</runtime>
+		<poster_img>we_bought_a_zoo</poster_img>
+		<trailer>XzGo402o7lU</trailer>
+		<storyline>Set in Southern California, a father moves his young family to the countryside to renovate and re-open a struggling zoo.</storyline>
+		<synopsis>This holiday season, acclaimed filmmaker Cameron Crowe (Jerry Maguire, Almost Famous) directs an amazing and true story about a single dad who decides his family needs a fresh start, so he and his two children move to the most unlikely of places: a zoo. With the help of an eclectic staff, and with many misadventures along the way, the family works to return the dilapidated zoo to its former wonder and glory.</synopsis>
+		<director>Cameron Crowe</director>
+		<writers>Aline Brosh McKenna</writers>
+		<writers>Cameron Crowe</writers>
+		<genre>Comedy</genre>
+		<genre>Drama</genre>
+		<genre>Family</genre>
+		<cast>Matt Damon</cast>
+		<cast>Scarlett Johansson</cast>
+		<cast>Thomas Haden Church</cast>
+		<rating>3.5</rating>
+		<official_website>http://www.weboughtazoo.com/</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>14:45</time>
+				<time>17:45</time>
+				<time>20:30</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>14:45</time>
+				<time>17:45</time>
+				<time>20:30</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>14:45</time>
+				<time>17:45</time>
+				<time>20:30</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>14:45</time>
+				<time>17:45</time>
+				<time>20:30</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>14:45</time>
+				<time>17:45</time>
+				<time>20:30</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>12:20</time>
+				<time>14:45</time>
+				<time>17:45</time>
+				<time>20:30</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>12:20</time>
+				<time>14:45</time>
+				<time>17:45</time>
+				<time>20:30</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="15">Contraband</movie_title>
+		<release_date>MAR 16 2012</release_date>
+		<runtime>110</runtime>
+		<poster_img>contraband</poster_img>
+		<trailer>SjcCbSmF_OA</trailer>
+		<storyline>To protect his brother-in-law from a drug lord, a former smuggler heads to Panama to score millions of dollars in counterfeit bills.</storyline>
+		<synopsis>Mark Wahlberg leads the cast of Contraband, a fast-paced thriller about a man trying to stay out of a world he worked so hard to leave behind and the family he'll do anything to protect. Set in New Orleans, the film explores the cutthroat underground world of international smuggling, full of desperate criminals and corrupt officials, high-stakes and big payoffs where loyalty rarely exists and death is one wrong turn away. Chris Farraday (Wahlberg) long ago abandoned his life of crime, but after his brother-in-law, Andy (Caleb Landry Jones), botches a drug deal for his ruthless boss, Tim Briggs (Giovanni Ribisi), Chris is forced back into doing what he does best, running contraband to settle Andy's debt.
+Chris is a legendary smuggler and quickly assembles a crew with the help of his best friend, Sebastian (Ben Foster), for one final run to Panama and back, hoping to return with millions in counterfeit bills. Things quickly fall apart and with only hours to reach the cash, Chris must use his rusty skills to successfully navigate a treacherous criminal network of brutal drug lords, cops and hit men before his wife, Kate (Kate Beckinsale), and sons become their target.</synopsis>
+		<director>Baltasar Kormákur</director>
+		<writers>Aaron Guzikowski</writers>
+		<genre>Action</genre>
+		<genre>Crime</genre>
+		<genre>Drama</genre>
+		<cast>Mark Wahlberg</cast>
+		<cast>Kate Beckinsale</cast>
+		<cast>Ben Foster</cast>
+		<rating>3</rating>
+		<official_website>http://www.contrabandmovie.net/</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>14:00</time>
+				<time>16:15</time>
+				<time>18:30</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>14:00</time>
+				<time>16:15</time>
+				<time>18:30</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>14:00</time>
+				<time>16:15</time>
+				<time>18:30</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>14:00</time>
+				<time>16:15</time>
+				<time>18:30</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>14:00</time>
+				<time>16:15</time>
+				<time>18:30</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>14:00</time>
+				<time>16:15</time>
+				<time>18:30</time>
+				<time>20:45</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>14:00</time>
+				<time>16:15</time>
+				<time>18:30</time>
+				<time>20:45</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="18">Project X</movie_title>
+		<release_date>MAR 02 2012</release_date>
+		<runtime>88</runtime>
+		<poster_img>project_x</poster_img>
+		<trailer>1Rl1TJG17Wk</trailer>
+		<storyline>3 high school seniors throw a birthday party to make a name for themselves. As the night progresses, things spiral out of control as word of the party spreads.</storyline>
+		<synopsis>Project X follows three seemingly anonymous high school seniors as they attempt to finally make a name for themselves. Their idea is innocent enough: let's throw a party that no one will forget, but nothing could prepare them for this party. Word spreads quickly as dreams are ruined, records are blemished and legends are born. Project X is a warning to parents and police everywhere. This film has been rated R for crude and sexual content throughout, nudity, drugs, drinking, pervasive language, reckless behavior and mayhem-all involving teens.</synopsis>
+		<director>Nima Nourizadeh</director>
+		<writers>Michael Bacall</writers>
+		<writers>Matt Drake</writers>
+		<genre>Comedy</genre>
+		<cast>Thomas Mann</cast>
+		<cast>Oliver Cooper</cast>
+		<cast>Jonathan Daniel Brown</cast>
+		<rating>3.5</rating>
+		<official_website>http://projectxmovie.warnerbros.com/site/index.html</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>21:50</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>21:50</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>21:50</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>21:50</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>21:50</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>21:50</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>21:50</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="15">The Devil Inside</movie_title>
+		<release_date>MAR 16 2012</release_date>
+		<runtime>87</runtime>
+		<poster_img>the_devil_inside</poster_img>
+		<trailer>z3N6IIiyjjs</trailer>
+		<storyline>In Italy, a woman becomes involved in a series of unauthorized exorcisms during her mission to discover what happened to her mother, who allegedly murdered three people during her own exorcism.</storyline>
+		<synopsis>In 1989, emergency responders received a 9-1-1 call from Maria Rossi (Suzan Crowley) confessing that she had brutally killed three people. 20 years later, her daughter Isabella (Fernanda Andrade) seeks to understand the truth about what happened that night. She travels to the Centrino Hospital for the Criminally Insane in Italy where her mother has been locked away to determine if her mother is mentally ill or demonically possessed.
+When she recruits two young exorcists (Simon Quarterman and Evan Helmuth) to cure her mom using unconventional methods combining both science and religion, they come face-to-face with pure evil in the form of four powerful demons possessing Maria. Many have been possessed by one; only one has been possessed by many.</synopsis>
+		<director>William Brent Bell</director>
+		<writers>William Brent Bell</writers>
+		<writers>Matthew Peterman</writers>
+		<genre>Horror</genre>
+		<cast>Fernanda Andrade</cast>
+		<cast>Simon Quarterman</cast>
+		<cast>Evan Helmuth</cast>
+		<rating>3</rating>
+		<official_website>http://www.devilinsidemovie.com</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>14:15</time>
+				<time>16:30</time>
+				<time>18:40</time>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>12:00</time>
+				<time>14:15</time>
+				<time>16:30</time>
+				<time>18:40</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>16:25</time>
+				<time>18:40</time>
+				<time>20:30</time>
+				<time>22:10</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>12:00</time>
+				<time>14:15</time>
+				<time>16:30</time>
+				<time>18:40</time>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>16:25</time>
+				<time>18:10</time>
+				<time>19:45</time>
+				<time>20:30</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="15">The Raven</movie_title>
+		<release_date>MAR 09 2012</release_date>
+		<runtime>115</runtime>
+		<poster_img>the_raven</poster_img>
+		<trailer>-PGDV1SWRkQ</trailer>
+		<storyline>When a madman begins committing horrific murders inspired by Edgar Allan Poe's works, a young Baltimore detective joins forces with Poe to stop him from making his stories a reality.</storyline>
+		<synopsis>In this gritty thriller, Edgar Allan Poe (John Cusack, Being John Malkovich) joins forces with a young Baltimore detective (Luke Evans, Immortals) to hunt down a mad serial killer who's using Poe's own works as the basis in a string of brutal murders. Directed by James McTeigue (V for Vendetta, Ninja Assassin), the film also stars Alice Eve (Sex and the City 2), Brendan Gleeson (In Bruges) and Oliver Jackson-Cohen (Faster). When a mother and daughter are found brutally murdered in 19th century Baltimore, Detective Emmett Fields (Luke Evans) makes a startling discovery: the crime resembles a fictional murder described in gory detail in the local newspaper, part of a collection of stories penned by struggling writer and social pariah Edgar Allan Poe. But even as Poe is questioned by police, another grisly murder occurs, also inspired by a popular Poe story.
+Realizing a serial killer is on the loose using Poe's writings as the backdrop for his bloody rampage, Fields enlists the author's help in stopping the attacks. But when it appears someone close to Poe may become the murderer's next victim, the stakes become even higher and the inventor of the detective story calls on his own powers of deduction to try to solve the case before it's too late.</synopsis>
+		<director>James McTeigue</director>
+		<writers>Ben Livingston</writers>
+		<writers>Hannah Shakespeare</writers>
+		<genre>Thriller</genre>
+		<cast>John Cusack</cast>
+		<cast>Luke Evans</cast>
+		<cast>Alice Eve</cast>
+		<rating>3.5</rating>
+		<official_website>http://www.theravenmovie.com/</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>21:00</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="12a">This Means War</movie_title>
+		<release_date>MAR 02 2012</release_date>
+		<runtime>97</runtime>
+		<poster_img>this_means_war</poster_img>
+		<trailer>1h8PKzzQxTM</trailer>
+		<storyline>Two top CIA operatives wage an epic battle against one another after they discover they are dating the same woman.</storyline>
+		<synopsis>The world's deadliest CIA operatives are inseparable partners and best friends until they fall for the same woman. Having once helped bring down entire enemy nations, they are now employing their incomparable skills and an endless array of high-tech gadgetry against their greatest nemesis ever - each other.</synopsis>
+		<director>McG</director>
+		<writers>Timothy Dowling</writers>
+		<writers>Simon Kinberg</writers>
+		<genre>Action</genre>
+		<genre>Comedy</genre>
+		<genre>Romance</genre>
+		<cast>Reese Witherspoon</cast>
+		<cast>Chris Pine</cast>
+		<cast>Tom Hardy</cast>
+		<rating>3.5</rating>
+		<official_website>http://www.thismeanswarmovie.com/</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>14:15</time>
+				<time>19:20</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>14:15</time>
+				<time>19:20</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>21:10</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>21:10</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>15:45</time>
+				<time>16:10</time>
+				<time>17:20</time>
+				<time>19:30</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>14:15</time>
+				<time>19:20</time>
+				<time>21:35</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>14:15</time>
+				<time>19:20</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+	<movie>
+		<movie_title certificate="12a">The Hunger Games</movie_title>
+		<release_date>MAR 23 2012</release_date>
+		<runtime>142</runtime>
+		<poster_img>the_hunger_games</poster_img>
+		<trailer>A-dnmF8fbto</trailer>
+		<storyline>Set in a future where the Capitol selects a boy and girl from the twelve districts to fight to the death on live television, Katniss Everdeen volunteers to take her younger sister's place for the latest match.</storyline>
+		<synopsis>Sixteen year old Katniss Everdeen volunteers in her younger sister's place to enter the games, and is forced to rely upon her sharp instincts as well as the mentorship of drunken former victor Haymitch Abernathy when she's pitted against highly-trained Tributes who have prepared for these Games their entire lives. If she's ever to return home to District 12, Katniss must make impossible choices in the arena that weigh survival against humanity and life against love.</synopsis>
+		<director>Gary Ross</director>
+		<writers>Gary Ross</writers>
+		<writers>Suzanne Collins</writers>
+		<writers>Billy Ray</writers>
+		<genre>Action</genre>
+		<genre>Adventure</genre>
+		<genre>Si-Fi</genre>
+		<genre>Fantasy</genre>
+		<cast>Jennifer Lawrence</cast>
+		<cast>Josh Hutcherson</cast>
+		<cast>Liam Hemsworth</cast>
+		<rating>4</rating>
+		<official_website>http://www.thehungergamesmovie.com/</official_website>
+		<showtimes>
+			<date>
+				<day>mon</day>
+				<time>14:00</time>
+				<time>17:00</time>
+				<time>20:00</time>
+			</date>
+			<date>
+				<day>tue</day>
+				<time>14:00</time>
+				<time>17:00</time>
+				<time>20:00</time>
+			</date>
+			<date>
+				<day>wed</day>
+				<time>14:00</time>
+				<time>17:00</time>
+				<time>20:00</time>
+			</date>
+			<date>
+				<day>thur</day>
+				<time>14:00</time>
+				<time>17:00</time>
+				<time>20:00</time>
+			</date>
+			<date>
+				<day>fri</day>
+				<time>14:00</time>
+				<time>17:00</time>
+				<time>20:00</time>
+			</date>
+			<date>
+				<day>sat</day>
+				<time>12:00</time>
+				<time>15:00</time>
+				<time>18:00</time>
+				<time>21:00</time>
+			</date>
+			<date>
+				<day>sun</day>
+				<time>14:00</time>
+				<time>17:00</time>
+				<time>20:00</time>
+			</date>
+		</showtimes>
+	</movie>
+	
+</cinema>

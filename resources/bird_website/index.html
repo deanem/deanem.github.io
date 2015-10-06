@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Extinct Bird Website</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+<!----- LINK BACK TO DEANEMCCULLOUGH.COM--->  
+<div id="demo_back">
+<a href="https://scm.ulster.ac.uk/~B00595857/public_html/workspace/des310.html" class="lpanel"> << BACK TO DES310 </a>
+<a href="http://scm.ulster.ac.uk/~B00595857/public_html/contact.html" class="rpanel"> CONTACT ME >> </a>
+</div>
+
+<!----- HEADER START--->   
+<header id="header">
+<div class="content">
+<div id="logo"><a href="">THE STORY OF...</a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Intro</a></li>
+		<li><a href="#slide2" title="Next Section">Verse1</a></li>
+		<li><a href="#slide3" title="Next Section">Verse2</a></li>
+		<li><a href="#slide4" title="Next Section">Verse3</a></li>
+		<li><a href="#slide5" title="Next Section">Verse4</a></li>
+	</ul>
+</nav>
+</div>
+</header>	
+<!----- HEADER END--->   
+
+<!----- SLIDES START --->   	
+	<div id="slide1">
+		<div class="content">
+			<div id="takehe"> </div>
+			<div id="decoration1"></div>
+			<div id="decoration2"></div>
+            <h2>FINDING</h2>
+		    <h1>THE EXTINCT</h1>
+		    <div id="divider"> </div>
+		     <h3>NEW ZEALAND BIRD</h3>
+           <div id="ribbon"></div>
+		</div> 
+    </div> 
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="verses_container">
+		    <h3 class="verses">
+				Ourselves, we are writing a song.
+				<br />
+				It's based on a journey that lasts very long,
+				<br />
+				to find the extinct takahe bird,
+				<br />
+				while trying to rhyme the final word.
+			</h3>
+			</div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide3">
+		<div class="content">
+			<div class="verses_container">
+			<h3 class="verses">
+				It starts with an explorer who falls in love,
+				<br />
+				with a colourful bird from the land above.
+				<br />
+				He searched and searched throughout the land,
+				<br />
+				but the lost bird is far from hand.
+			</h3>
+			</div> 
+		</div> 
+	</div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+			<div class="verses_container">
+		    <h3 class="verses">
+		    	The bird stands tall at 20 inches high,
+				<br />
+				with 3-foot wings but unable to fly.
+				<br />
+				With lots of bright colours he looks pretty too;
+				<br />
+				green, white, purple, pink, red, black and blue.
+		    </h3>
+			</div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide5">
+		<div class="content">
+			<div class="verses_container">
+			<h3 class="verses">
+				Thought to be lost by all of the rest,
+				<br />
+				the exploroer would find him 'cus he is the best.
+				<br />
+				In New Zealand the bird lives life on the other side,
+				<br />
+				but with thanks to the explorer he is still alive.
+			</h3>
+			<img src="img/dr-obell.png" align="left"/> <h4 class="explorer">Dr. Orbell</h4>
+			</div> 
+		<div id="copyright"><a href="http://www.deanemccullough.com/" target="_blank">Copyright deanemccullough.com </a></div>  
+		</div> 
+	</div>
+	
+<!----- SLIDES END --->
+
+</body>
+</html>

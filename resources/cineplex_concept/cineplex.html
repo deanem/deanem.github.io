@@ -1,0 +1,340 @@
+ <!DOCTYPE html>
+ 
+ <html>
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  	
+  	<meta name="description" content="Cineplex for COM 155 Assignment 2 by group B6b, created using XML and XSLT.">  
+	<meta name="author" content="Alastair Coleman, Conor McCann, Deane McCullough"> 
+  
+  	<title>Group B6b Cineplex | Assignment 2 | Alastair Coleman, Conor McCann, Deane McCullough</title>
+  
+	<link rel="stylesheet" href="css/html5reset-1.6.1.css" />
+	<link rel="stylesheet" href="css/cineplex.css" />
+	<link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.css" />
+	<link rel="stylesheet" href="css/jquery.fancybox.css" />
+	
+	<link rel="icon" href="favicon.png" type="image/png"/>
+  
+  
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	
+	
+	<script>
+	
+	checked=true;
+	function checkedAll (frm1) {
+		var aa= document.getElementById('frm1');
+		if (checked == false) {
+			checked = true
+	    }
+		else {
+			checked = false
+		}
+		for (var i =0; i < aa.elements.length; i++) 
+		{
+			aa.elements[i].checked = checked;
+		}
+		displayrightlistings();
+	}
+	
+
+	function displayrightlistings() {
+
+		var selectVal = $("#genre_select :selected").val();
+		var day = $("nav ul li.active").text(); 
+		var checked = [];
+		$('#frm1 :checkbox:checked').each(function(i){
+		      checked[i] = $(this).val();
+		});
+		
+		var finalstring = ".";
+		if (selectVal !== undefined) {
+			finalstring += "."+selectVal;
+		}
+		if (checked !== undefined) {
+			var origstring = finalstring;
+			finalstring ="";
+			$(checked).each(function(i){
+		 	    var addstring = origstring+"."+checked[i];
+		 	    if (i ==0) { finalstring += addstring; }
+		 	    else {
+		      		finalstring += ", "+addstring;
+				}
+			});
+		}
+		console.log(finalstring);
+		
+		$("ul.showtimes").css('display','none');
+		$("ul.showtimes."+day).css('display','block');
+		$("article").css('display','none');
+		$(finalstring).css('display','inline-block');
+	}
+	
+	$(document).ready(function(){
+		displayrightlistings();
+		var blockview = true;
+		$('.synopsis').css('display','none');
+		$('.director').css('display','none');
+		$('.cast').css('display','none');
+		$(".switchviewimage img").click(function(){
+			if (blockview == true) {
+				$(this).attr("src", "images/list_view.png");
+				$("article").css('width','100%');
+				$('.synopsis').css('display','block');
+				$('.director').css('display','block');
+				$('.cast').css('display','block');
+				$('.storyline').css('display','none');
+				blockview = false;
+			}
+			else {
+				$(this).attr("src", "images/block_view.png");
+				$("article").css('width','49.75%');
+				$('.synopsis').css('display','none');
+				$('.director').css('display','none');
+				$('.cast').css('display','none');
+				$('.storyline').css('display','block');
+				blockview = true;
+			}
+			
+		});
+	$("nav ul li").click(function(){
+		$("nav ul li").removeClass("active");
+		$(this).addClass("active");
+		displayrightlistings();
+	});
+	});
+	
+	</script>
+	
+	<!--[if lt IE 9]>  
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+
+	
+	<script type="text/javascript" src="http://use.typekit.com/kxy2ylp.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+  </head>
+  <body>
+  
+	<header></header>
+  
+	<div id="container">
+	<aside>
+	
+	<h3>FILTER BY:</h3>
+	
+		
+           <h4>Certificate</h4>
+		   
+		<div id="cert">
+			<label for = "all">All</label>
+			<input type = "checkbox" id = "all" value = "all" onClick="checkedAll(frm1)" checked />
+             
+    
+	<form id="frm1">
+	
+			<label for = "u">U</label>
+             <input type = "checkbox" id = "u" value = "certu" onClick="displayrightlistings()" checked />
+			 
+			 <label for = "pg">PG</label>
+			 <input type = "checkbox" id = "pg" value = "certpg" onClick="displayrightlistings()" checked />
+			 
+			 <label for = "12a">12A</label>
+             <input type = "checkbox" id = "12a" value = "cert12a" onClick="displayrightlistings()" checked />
+			 
+			 <label for = "15">15</label>
+			 <input type = "checkbox" id = "15" value = "cert15" onClick="displayrightlistings()" checked />
+			 
+			 <label for = "18">18</label>
+			 <input type = "checkbox" id = "18" value = "cert18" onClick="displayrightlistings()" checked />
+	</form>
+		
+		</div>
+		
+		<h4>Genre</h4>
+	
+	<select class="custom" id="genre_select" onChange="displayrightlistings()" >
+		<option value="all">Any</option>
+		<option value="Action">Action</option>
+		<option value="Adventure">Adventure</option>
+		<option value="Animation">Animation</option>
+		<option value="Biography">Biography</option>
+		<option value="Comedy">Comedy</option>
+		<option value="Crime">Crime</option>
+		<option value="Documentary">Documentary</option>
+		<option value="Drama">Drama</option>
+		<option value="Family">Family</option>
+		<option value="Fantasy">Fantasy</option>
+		<option value="Film-Noir">Film-Noir</option>
+		<option value="History">History</option>
+		<option value="Horror">Horror</option>
+		<option value="Musical">Musical</option>
+		<option value="Mystery">Mystery</option>
+		<option value="Romance">Romance</option>
+		<option value="Sci-Fi">Sci-Fi</option>
+		<option value="Sport">Sport</option>
+		<option value="Thriller">Thriller</option>
+		<option value="War">War</option>
+		<option value="Western">Western</option>
+	</select>
+	
+
+	
+	
+	
+	</aside>
+  
+	<section>
+	
+	<nav>
+	<ul class="mainnav">
+		<li class="active">mon</li>
+		<li>tue</li>
+		<li>wed</li>
+		<li>thur</li>
+		<li>fri</li>
+		<li>sat</li>
+		<li>sun</li>
+	</ul>
+	
+	</nav>
+	
+	<div class="switchview">
+		View: <span class="switchviewimage"><img src="images/block_view.png" alt="Block View" class="block"/></span>
+	</div>
+	
+	
+<article class="mon Action cert15 all">
+	<a class="various" href="http://www.youtube.com/embed/ISJR4rVO0TQ?autoplay=1&iv_load_policy=3"><img src="images/21_jump_street.jpg" alt="21 Jump Steet Poster" class="poster" /><img src="images/play.png" alt="play Trailer" class="playbutton"/></a>
+	<div class="movieinstance">
+	<h2>21 Jump Street</h2>
+	<p class="genres">Action/Adventure</p>
+	<div class="info">
+		<img src="images/15.png" alt="Certificate 15" class="certificate"/>
+		<span class="runtime">109 min</span>
+		<img src="images/3star.png" class="rating" />
+	</div>
+	<p class="director"><strong>Director:</strong> Phil Lord, Chris Miller</p>
+	<p class="cast"><strong>Cast: </strong>Channing Tatum, Jonah Hill, Brie Larson, Dave Franco, Rob Riggle, Ice Cube</p>
+	<p class="storyline">A pair of underachieving cops are sent back to a local high school to blend in and bring down a synthetic drug ring.</p>
+	<p class="synopsis">Schmidt and Jenko are more than ready to leave their adolescent problems behind. Joining the police force and the secret Jump Street unit, they use their youthful appearances to go undercover in a local high school. As they trade in their guns and badges for backpacks, Schmidt and Jenko risk their lives to investigate a violent and dangerous drug ring. But they find that high school is nothing like they left it just a few years earlier - and neither expects that they will have to confront the terror and anxiety of being a teenager again and all the issues they thought they had left behind.</p>
+	
+	<ul class="showtimes tk-league-gothic mon">
+		<li>19:30</li>
+		<li>22:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic tue">
+		<li>18:30</li>
+		<li>21:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic wed">
+		<li>17:30</li>
+		<li>23:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic thur">
+		<li>19:20</li>
+		<li>21:10</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic fri">
+		<li>19:30</li>
+		<li>21:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic sat">
+		<li>19:30</li>
+		<li>21:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic sun">
+		<li>19:30</li>
+		<li>21:40</li>
+	</ul>
+	</div>
+	</article>
+
+
+	
+	<article class="mon Action cert15 all">
+	<a class="various" href="http://www.youtube.com/embed/ISJR4rVO0TQ?autoplay=1&iv_load_policy=3"><img src="images/21_jump_street.jpg" alt="21 Jump Steet Poster" class="poster" /><img src="images/play.png" alt="play Trailer" class="playbutton"/></a>
+	<div class="movieinstance">
+	<h2>21 Jump Street</h2>
+	<p class="genres">Action/Adventure</p>
+	<div class="info">
+		<img src="images/15.png" alt="Certificate 15" class="certificate"/>
+		<span class="runtime">109 min</span>
+		<img src="images/3star.png" class="rating" />
+	</div>
+	<p class="director"><strong>Director:</strong> Phil Lord, Chris Miller</p>
+	<p class="cast"><strong>Cast: </strong>Channing Tatum, Jonah Hill, Brie Larson, Dave Franco, Rob Riggle, Ice Cube</p>
+	<p class="storyline">A pair of underachieving cops are sent back to a local high school to blend in and bring down a synthetic drug ring.</p>
+	<p class="synopsis">Schmidt and Jenko are more than ready to leave their adolescent problems behind. Joining the police force and the secret Jump Street unit, they use their youthful appearances to go undercover in a local high school. As they trade in their guns and badges for backpacks, Schmidt and Jenko risk their lives to investigate a violent and dangerous drug ring. But they find that high school is nothing like they left it just a few years earlier - and neither expects that they will have to confront the terror and anxiety of being a teenager again and all the issues they thought they had left behind.</p>
+	
+	<ul class="showtimes tk-league-gothic mon">
+		<li>19:30</li>
+		<li>22:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic tue">
+		<li>18:30</li>
+		<li>21:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic wed">
+		<li>17:30</li>
+		<li>23:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic thur">
+		<li>19:20</li>
+		<li>21:10</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic fri">
+		<li>19:30</li>
+		<li>21:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic sat">
+		<li>19:30</li>
+		<li>21:40</li>
+	</ul>
+	<ul class="showtimes tk-league-gothic sun">
+		<li>19:30</li>
+		<li>21:40</li>
+	</ul>
+	</div>
+	</article>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</section>
+	</div>
+	
+	
+	<footer>
+		<p>Designed by Alastair Coleman, Conor McCann &amp; Deane McCullough<p>
+		<p>&copy; Copyright 2012.</p>
+	</footer>
+	
+	<script type="text/javascript">
+$(document).ready(function() {
+	$(".various").fancybox({
+		type		: 'iframe',
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
+	
+  </body>
+  </html>

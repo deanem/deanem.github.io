@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT cinema (movie+) >
+<!ELEMENT movie (movie_title, release_date?, runtime, poster_img, trailer, storyline, synopsis, director*, writers*, genre*, cast*, rating, official_website?, showtimes) >
+<!ELEMENT movie_title (#PCDATA)>
+<!ATTLIST movie_title certificate (u|pg|12|12a|15|18) #REQUIRED >
+<!ELEMENT release_date (#PCDATA)>
+<!ELEMENT runtime (#PCDATA)>
+<!ELEMENT poster_img (#PCDATA)>
+<!ELEMENT trailer (#PCDATA)>
+<!ELEMENT storyline (#PCDATA)>
+<!ELEMENT synopsis (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT writers (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT cast (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT official_website (#PCDATA)>
+<!ELEMENT showtimes (date+)>
+<!ELEMENT date (day, time+)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+
