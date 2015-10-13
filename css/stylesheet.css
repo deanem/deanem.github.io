@@ -90,6 +90,9 @@ a {
   margin-top: 0;
   margin-bottom: 0.1rem; }
 
+.header-name a {
+    color: #fff; }
+
 
 @media screen and (min-width: 64em) {
   .header-name {
@@ -226,6 +229,10 @@ a {
   margin: 1rem 0;
   background-color: #eff0f1;
   border: 0; }
+.main-content ul {
+  list-style-position: inside;
+  padding-left:0; }
+
 
 @media screen and (min-width: 64em) {
   .main-content {
