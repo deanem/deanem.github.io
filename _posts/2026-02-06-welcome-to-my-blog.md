@@ -1,6 +1,8 @@
 ---
 title: Welcome to My Blog
 description: Why I'm writing here and what you can expect.
+categories: [Writing]
+tags: [meta, blogging, notes]
 ---
 This blog is where I document what I build and what I learn along the way.
 

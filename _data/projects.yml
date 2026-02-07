@@ -2,14 +2,20 @@
   summary: A searchable knowledge map for research notes and references.
   stack: Ruby, Elasticsearch, Tailwind
   url: https://github.com/deanem/project-atlas
+  case_study: /projects/project-atlas/
+  impact: "Early benchmark target: reduce note retrieval time from minutes to under 20 seconds."
   status: Live
 - name: Habit Pulse
   summary: A weekly habit-tracking app with streak insights and gentle nudges.
   stack: React, Node.js, PostgreSQL
   url: https://github.com/deanem/habit-pulse
+  case_study: /projects/habit-pulse/
+  impact: "Current milestone: achieve a 4-week retention rate above 55% after launch."
   status: In Progress
 - name: ClipBoard AI
   summary: A browser extension that rewrites rough notes into polished snippets.
   stack: TypeScript, OpenAI API, Vite
   url: https://github.com/deanem/clipboard-ai
+  case_study: /projects/clipboard-ai/
+  impact: "Prototype goal: cut rewrite time per note by at least 50% in user testing."
   status: Prototype

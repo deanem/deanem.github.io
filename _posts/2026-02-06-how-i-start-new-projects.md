@@ -1,6 +1,8 @@
 ---
 title: How I Start New Projects
 description: A simple checklist to go from blank repo to useful first release.
+categories: [Engineering]
+tags: [planning, shipping, process]
 ---
 Starting from scratch can be overwhelming, so I default to a short checklist:
 

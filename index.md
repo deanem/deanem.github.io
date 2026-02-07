@@ -26,8 +26,16 @@ layout: default
         <p class="tag">{{ project.status }}</p>
         <h3>{{ project.name }}</h3>
         <p>{{ project.summary }}</p>
+        {% if project.impact %}
+          <p class="impact"><strong>Impact:</strong> {{ project.impact }}</p>
+        {% endif %}
         <p class="small">{{ project.stack }}</p>
-        <a href="{{ project.url }}" target="_blank" rel="noreferrer">Open Project</a>
+        <div class="card-links">
+          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">Open Project</a>
+          {% if project.case_study %}
+            <a href="{{ project.case_study | relative_url }}">Read Case Study</a>
+          {% endif %}
+        </div>
       </article>
     {% endfor %}
   </div>

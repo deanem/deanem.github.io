@@ -4,7 +4,8 @@ This repo is set up as a GitHub Pages personal site with:
 
 - **About** page (`/about/`)
 - **Projects portfolio** page (`/projects/`)
-- **Blog** page (`/blog/`) powered by Jekyll posts in `_posts/`
+- **Project case studies** under `projects/<project>/`
+- **Blog** page (`/blog/`) powered by Jekyll posts in `_posts/` with tag filtering and paging controls
 
 ## Quick Start
 
@@ -28,8 +29,16 @@ This repo is set up as a GitHub Pages personal site with:
 - Site-wide metadata: `_config.yml`
 - Name, links, intro copy: `index.md` and `about/index.md`
 - Portfolio items: `_data/projects.yml`
+- Case study pages: `projects/<slug>/index.md`
 - Blog posts: `_posts/YYYY-MM-DD-title.md`
 - Styles: `assets/css/style.css`
+
+## Quality checks
+
+GitHub Actions runs on pull requests and pushes to `main`:
+
+- `bundle exec jekyll build`
+- Internal link checks against the generated `_site/`
 
 ## Publish with GitHub Pages
 

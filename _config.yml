@@ -2,10 +2,21 @@ title: Deane McCullough
 description: Builder, problem-solver, and lifelong learner.
 url: "https://deanem.github.io"
 baseurl: ""
+lang: en-US
+author:
+  name: Deane McCullough
+  email: hi@deane.email
+social:
+  name: Deane McCullough
+  links:
+    - https://github.com/deanem
+    - https://www.linkedin.com/in/deanemccullough/
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   - scope:
