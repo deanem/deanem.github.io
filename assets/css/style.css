@@ -161,7 +161,9 @@ h4 {
 
 .hero-mono {
   color: var(--brand);
+  display: block;
   font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 18rem;
   font-size: clamp(8rem, 25vw, 18rem);
   font-weight: 800;
   left: -0.08em;
@@ -170,6 +172,7 @@ h4 {
   pointer-events: none;
   position: absolute;
   top: -0.15em;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -188,16 +191,23 @@ h4 {
 .hero-foot {
   align-items: flex-start;
   border-top: 1px solid var(--line);
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   gap: 2rem;
   justify-content: space-between;
   padding-top: 1.25rem;
 }
 
 .hero-foot .lede {
+  -webkit-flex: 1;
   flex: 1;
   margin: 0;
   max-width: 44ch;
+  min-width: 0;
 }
 
 .hero-foot .hero-actions {
