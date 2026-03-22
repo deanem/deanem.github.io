@@ -13,7 +13,12 @@ description: A portfolio of things I've built, tested, and learned from.
       {% endif %}
       <p class="small"><strong>Stack:</strong> {{ project.stack }}</p>
       <div class="card-links">
-        <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">Open Project</a>
+        {% if project.url %}
+          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">Visit Site</a>
+        {% endif %}
+        {% if project.github %}
+          <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        {% endif %}
         {% if project.case_study %}
           <a href="{{ project.case_study | relative_url }}">Read Case Study</a>
         {% endif %}

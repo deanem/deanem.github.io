@@ -140,24 +140,6 @@ h4 {
   padding: 0 1rem 2rem;
 }
 
-.construction-banner {
-  background: linear-gradient(180deg, #fff9ed, #fff4df);
-  border: 1px solid #f2d9b2;
-  border-radius: 14px;
-  box-shadow: 0 10px 24px rgba(92, 62, 15, 0.08);
-  margin: 1rem auto 0;
-  max-width: 960px;
-  padding: 0.8rem 1rem;
-  width: calc(100% - 2rem);
-}
-
-.construction-banner p {
-  color: #7a4c0c;
-  font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
-  font-size: 0.95rem;
-  margin: 0;
-}
-
 .panel {
   background: linear-gradient(175deg, #fffdfa, #fefcf7);
   border: 1px solid var(--line);
@@ -171,11 +153,66 @@ h4 {
   margin-bottom: 1.5rem;
 }
 
-.hero h1 {
-  font-size: clamp(1.9rem, 5.3vw, 3rem);
-  margin-bottom: 0.7rem;
-  max-width: 14ch;
+.hero {
+  margin-bottom: 1rem;
+  padding: clamp(2.5rem, 8vw, 5rem) 0 clamp(2rem, 5vw, 3.5rem);
+  position: relative;
 }
+
+.hero-mono {
+  color: var(--brand);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: clamp(8rem, 25vw, 18rem);
+  font-weight: 800;
+  left: -0.08em;
+  line-height: 1;
+  opacity: 0.05;
+  pointer-events: none;
+  position: absolute;
+  top: -0.15em;
+  user-select: none;
+}
+
+.hero .eyebrow,
+.hero h1,
+.hero-foot {
+  position: relative;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
+  margin-bottom: 1.5rem;
+  max-width: 20ch;
+}
+
+.hero-foot {
+  align-items: flex-start;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding-top: 1.25rem;
+}
+
+.hero-foot .lede {
+  flex: 1;
+  margin: 0;
+  max-width: 44ch;
+}
+
+.hero-foot .hero-actions {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero .eyebrow { animation: hero-fade-up 0.5s ease both; }
+.hero h1       { animation: hero-fade-up 0.5s ease both 0.1s; }
+.hero-foot     { animation: hero-fade-up 0.5s ease both 0.2s; }
 
 .eyebrow {
   color: var(--brand);
@@ -273,16 +310,27 @@ h4 {
   margin-top: auto;
 }
 
-.impact {
-  font-size: 0.94rem;
-  margin: 0;
-}
-
 .card-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: auto;
+}
+
+.card-links a {
+  font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-links a::after {
+  content: " →";
+  font-weight: 400;
+}
+
+.card-links a:hover::after {
+  content: " →";
 }
 
 .clean-list,
@@ -394,6 +442,34 @@ h4 {
 
 .post h1 {
   margin-bottom: 0.4rem;
+}
+
+.page-hero {
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(1.2rem, 3vw, 2rem);
+}
+
+.page-hero h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: 0.4rem;
+}
+
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.contact-row a {
+  font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-row a:hover {
+  color: var(--accent);
 }
 
 .site-footer {

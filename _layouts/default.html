@@ -19,13 +19,7 @@
         <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' %}class="active" aria-current="page"{% endif %}>Blog</a>
       </nav>
     </header>
-    <section class="construction-banner" aria-label="Site status notice">
-      <p>
-        <strong>Site status:</strong> This site is new and currently under construction.
-        Some sections contain placeholder template data while content is being finalized.
-      </p>
-    </section>
-    <main class="content-shell" id="main-content">
+<main class="content-shell" id="main-content">
       {{ content }}
     </main>
     <footer class="site-footer">

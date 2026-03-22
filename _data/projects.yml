@@ -1,21 +1,22 @@
-- name: Project Atlas
-  summary: A searchable knowledge map for research notes and references.
-  stack: Ruby, Elasticsearch, Tailwind
-  url: https://github.com/deanem/project-atlas
-  case_study: /projects/project-atlas/
-  impact: "Early benchmark target: reduce note retrieval time from minutes to under 20 seconds."
-  status: Live
-- name: Habit Pulse
-  summary: A weekly habit-tracking app with streak insights and gentle nudges.
-  stack: React, Node.js, PostgreSQL
-  url: https://github.com/deanem/habit-pulse
-  case_study: /projects/habit-pulse/
-  impact: "Current milestone: achieve a 4-week retention rate above 55% after launch."
-  status: In Progress
-- name: ClipBoard AI
-  summary: A browser extension that rewrites rough notes into polished snippets.
-  stack: TypeScript, OpenAI API, Vite
-  url: https://github.com/deanem/clipboard-ai
-  case_study: /projects/clipboard-ai/
-  impact: "Prototype goal: cut rewrite time per note by at least 50% in user testing."
-  status: Prototype
+- name: CPD Manager Suite
+  summary: A three-plugin Moodle suite for tracking Continuing Professional Development — activity logging with manager approval workflows, organisation-level compliance reporting, and a dashboard progress block.
+  stack: PHP, MySQL, Moodle
+  url: https://moodle.deanemccullough.com
+  case_study: /projects/cpd-manager/
+  impact: "Covers the full CPD lifecycle: learner activity submission, bulk manager approval, automated deadline alerts, course-completion auto-credit, and org-wide compliance dashboards."
+  status: Active
+- name: Digest
+  summary: An automated intelligence briefing system that ingests RSS feeds, clusters related coverage, synthesises stories with an LLM, and delivers personalised email digests.
+  stack: Python, Flask, PostgreSQL, spaCy, scikit-learn, Anthropic / OpenAI / Gemini
+  url: https://thedigest.co
+  github: https://github.com/deanem/digest
+  case_study: /projects/digest/
+  impact: "Production system with 861 passing tests; multi-provider LLM fallback with circuit-breaker routing, story-threading, contradiction detection, and a full ops dashboard."
+  status: Production
+- name: coo-agent
+  summary: A Docker-first AI agent runtime and orchestration control plane with durable state, approval-gated risky actions, and bounded worker execution.
+  stack: Python, FastAPI, PostgreSQL, Redis, litellm
+  github: https://github.com/deanem/coo-agent
+  case_study: /projects/coo-agent/
+  impact: "Designed for high-stakes operational tasks: webhook-triggered jobs, HMAC-signed requests, role-isolated workers, Prometheus metrics, and HA failover via Redis leader election."
+  status: In Development

@@ -2,16 +2,16 @@
 title: Home
 layout: default
 ---
-<section class="hero panel">
+<section class="hero">
+  <span class="hero-mono" aria-hidden="true">D</span>
   <p class="eyebrow">Hello, I'm Deane.</p>
   <h1>I build practical products that make work feel lighter.</h1>
-  <p class="lede">
-    I'm a developer focused on clean interfaces, strong systems, and honest communication.
-    This site is my home base for projects, writing, and experiments.
-  </p>
-  <div class="hero-actions">
-    <a class="button" href="{{ '/projects/' | relative_url }}">View Projects</a>
-    <a class="button ghost" href="{{ '/blog/' | relative_url }}">Read Blog</a>
+  <div class="hero-foot">
+    <p class="lede">This site is my home base for projects, writing, and experiments.</p>
+    <div class="hero-actions">
+      <a class="button" href="{{ '/projects/' | relative_url }}">View Projects</a>
+      <a class="button ghost" href="{{ '/blog/' | relative_url }}">Read Blog</a>
+    </div>
   </div>
 </section>
 
@@ -26,12 +26,14 @@ layout: default
         <p class="tag">{{ project.status }}</p>
         <h3>{{ project.name }}</h3>
         <p>{{ project.summary }}</p>
-        {% if project.impact %}
-          <p class="impact"><strong>Impact:</strong> {{ project.impact }}</p>
-        {% endif %}
         <p class="small">{{ project.stack }}</p>
         <div class="card-links">
-          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">Open Project</a>
+          {% if project.url %}
+            <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">Visit Site</a>
+          {% endif %}
+          {% if project.github %}
+            <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+          {% endif %}
           {% if project.case_study %}
             <a href="{{ project.case_study | relative_url }}">Read Case Study</a>
           {% endif %}
@@ -41,21 +43,19 @@ layout: default
   </div>
 </section>
 
+{% if site.posts.size > 0 %}
 <section class="panel">
   <div class="section-head">
     <h2>Latest Writing</h2>
     <a href="{{ '/blog/' | relative_url }}">Browse posts</a>
   </div>
-  {% if site.posts.size > 0 %}
-    <ul class="clean-list">
-      {% for post in site.posts limit:4 %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <p>No posts yet. Add your first post in <code>_posts/</code>.</p>
-  {% endif %}
+  <ul class="clean-list">
+    {% for post in site.posts limit:4 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
+{% endif %}
