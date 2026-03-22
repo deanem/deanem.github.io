@@ -159,9 +159,9 @@ h4 {
   position: relative;
 }
 
-.hero-mono {
+.hero::before {
   color: var(--brand);
-  display: block;
+  content: "D";
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   font-size: 18rem;
   font-size: clamp(8rem, 25vw, 18rem);
@@ -180,6 +180,7 @@ h4 {
 .hero h1,
 .hero-foot {
   position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -189,30 +190,28 @@ h4 {
 }
 
 .hero-foot {
-  align-items: flex-start;
   border-top: 1px solid var(--line);
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 2rem;
   gap: 2rem;
-  justify-content: space-between;
+  -webkit-align-items: start;
+  align-items: start;
   padding-top: 1.25rem;
 }
 
 .hero-foot .lede {
-  -webkit-flex: 1;
-  flex: 1;
   margin: 0;
   max-width: 44ch;
-  min-width: 0;
 }
 
 .hero-foot .hero-actions {
-  flex-shrink: 0;
   margin-top: 0;
+}
+
+@-webkit-keyframes hero-fade-up {
+  from { opacity: 0; -webkit-transform: translateY(10px); transform: translateY(10px); }
+  to   { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
 }
 
 @keyframes hero-fade-up {
@@ -220,9 +219,18 @@ h4 {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.hero .eyebrow { animation: hero-fade-up 0.5s ease both; }
-.hero h1       { animation: hero-fade-up 0.5s ease both 0.1s; }
-.hero-foot     { animation: hero-fade-up 0.5s ease both 0.2s; }
+.hero .eyebrow { -webkit-animation: hero-fade-up 0.5s ease both; animation: hero-fade-up 0.5s ease both; }
+.hero h1       { -webkit-animation: hero-fade-up 0.5s ease both 0.1s; animation: hero-fade-up 0.5s ease both 0.1s; }
+.hero-foot     { -webkit-animation: hero-fade-up 0.5s ease both 0.2s; animation: hero-fade-up 0.5s ease both 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .eyebrow,
+  .hero h1,
+  .hero-foot {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
 
 .eyebrow {
   color: var(--brand);
@@ -511,8 +519,8 @@ code {
     gap: 0.65rem;
   }
 
-  .construction-banner {
-    padding: 0.75rem 0.9rem;
+  .hero-foot {
+    grid-template-columns: 1fr;
   }
 
   .clean-list li {

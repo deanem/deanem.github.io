@@ -3,7 +3,6 @@ title: Home
 layout: default
 ---
 <section class="hero">
-  <span class="hero-mono" aria-hidden="true">D</span>
   <p class="eyebrow">Hello, I'm Deane.</p>
   <h1>I build practical products that make work feel lighter.</h1>
   <div class="hero-foot">
